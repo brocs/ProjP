@@ -1,0 +1,1088 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&family=Urbanist:ital,wght@0,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+.navbar.sticky{
+    padding: 20px 0;
+    background: #323232;
+    box-shadow: 0px 2px 40px -20px;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color:transparent;
+    font-size: 28px;
+    font-weight: 600;
+    pointer-events: none;
+    cursor: default;
+}
+.navbar.sticky .logo a{
+    color:#f9a241;
+    font-size: 28px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #959595;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 24px;
+}
+
+.navbar .menu li a:hover{
+    color: #f9a241;
+}
+
+/* BURGER BTN */
+.menu-btn{
+    color:#959595;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* HOME SECTION */
+
+.home{
+    display: flex;
+    background: url("images/herobanner.png") no-repeat #323232;
+    background-attachment: fixed;
+    background-size:auto;
+    background-position:top right;
+    height: 100vh;
+    min-height: 500px;
+    width: 100vw;
+}
+
+.home .max-width{
+    width: 100%;
+}
+
+.home .home-content .text-1{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 28px;
+    color: #959595;
+}
+.home .home-content .text-2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    color: #f9a241;
+    margin-top:-1%;
+}
+
+.home .home-content .text-3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    color: #f9a241;
+    margin-top:-3%;
+}
+
+.home .home-content .text-4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    color: #f9a241;
+    margin-top:-3%;
+}
+
+/* ABOUT SECTION */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Roboto', sans-serif;
+    background: #353435;
+}
+.about .title{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Urbanist', sans-serif;
+    display: block;
+    z-index: 999;
+    color: #f9a241;
+    padding-bottom: 50px;
+    
+}
+.about .title-1{
+    text-align: center;
+    top:45px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    opacity: .1;
+    position:static;
+    margin-top: -125px;
+    margin-bottom: 50px;
+}
+.about .about-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:white;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .about-cnt{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.about .about-content .right .about-cnt span{
+    font-style: italic;
+    font-size: 24px;
+    color:#959595;
+    font-weight: 600;
+}
+#p1{
+    font-size: 18px;
+    line-height:30px;
+    margin-bottom: 20px;
+}
+.edu{
+    color:#959595;
+    font-weight: 600;
+}
+.about .about-content .left img{
+    height:400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.about .about-content .right li{
+    list-style: none;
+    display: inline-block;
+}
+.about .about-content .right li a{
+    color: #959595;
+    font-size: 30px;
+    margin-right: 24px;
+}
+.about .about-content .right li a:hover{
+    color: #f9a241;
+    font-size: 30px;
+    margin-right: 24px;
+}
+
+
+
+
+/* WORKS SECTION */
+section{
+    padding: 100px 0;
+}
+.works .max-width{
+    width: 100%;
+}
+.works {
+    font-family: 'Roboto', sans-serif;
+    background: #2d2d2d;
+    
+}
+.works .title{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Urbanist', sans-serif;
+    display: block;
+    z-index: 999;
+    color: #f9a241;
+    padding-bottom: 50px;
+    
+}
+.works .title-1{
+    text-align: center;
+    top:45px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    opacity: .1;
+    position:static;
+    margin-top: -125px;
+    margin-bottom: 50px;
+}
+.works .works-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color:white;
+}
+.works .works-content .title-2{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+.logo-identity {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 50px;
+}
+
+/* FOOTER SECTION */
+section{
+    padding: 100px 0;
+}
+.footer .max-width{
+    width: 100%;
+}
+.footer {
+    font-family: 'Roboto', sans-serif;
+    background: #f9a241;
+    
+}
+.footer .title{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Urbanist', sans-serif;
+    display: block;
+    z-index: 999;
+    color: #2d2d2d;
+    padding-bottom: 50px;
+    font-weight: 700;
+}
+.footer .title-1{
+    text-align: center;
+    top:45px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    opacity: .1;
+    position:static;
+    margin-top: -125px;
+    margin-bottom: 50px;
+}
+.footer .footer-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color:white;
+    justify-content: center;
+    margin:auto;
+}
+.footer .footer-content .block-c {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .footer-content .title-3{
+    
+    position: relative;
+    width: 300px;
+    max-height: 100%;
+    align-items: center;
+    text-align: left;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    margin: 10px;
+    float: left;
+    padding:20px;
+    border: 3px solid transparent;
+}
+.footer .footer-content .title-3 h2{
+    
+    padding-bottom: 30px;
+}
+    
+
+ 
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Teko:700);
+.snip1543 {
+  background-color: #fff;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  align-items: center;
+  max-width: 420px;
+  min-width: 230px;
+  height:250px;
+  overflow: hidden;
+  position:relative;
+  text-align: left;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.snip1543 *,
+.snip1543 *:before,
+.snip1543 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1543 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1543:before,
+.snip1543:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #2d2d2d;
+  opacity: 0.5;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1543:before {
+  -webkit-transform: skew(30deg) translateX(-80%);
+  transform: skew(30deg) translateX(-80%);
+}
+
+.snip1543:after {
+  -webkit-transform: skew(-30deg) translateX(-70%);
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.snip1543 figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 25px 40% 25px 20px;
+}
+
+.snip1543 figcaption:before,
+.snip1543 figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f9a241;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.snip1543 figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-100%);
+  transform: skew(30deg) translateX(-100%);
+}
+
+.snip1543 figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-90%);
+  transform: skew(-30deg) translateX(-90%);
+}
+
+.snip1543 h3,
+.snip1543 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1543 h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.snip1543 p {
+  font-size: 0.9em;
+}
+
+.snip1543 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1543:hover h3,
+.snip1543.hover h3,
+.snip1543:hover p,
+.snip1543.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0.9;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.snip1543:hover:before,
+.snip1543.hover:before {
+  -webkit-transform: skew(30deg) translateX(-20%);
+  transform: skew(30deg) translateX(-20%);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.snip1543:hover:after,
+.snip1543.hover:after {
+  -webkit-transform: skew(-30deg) translateX(-10%);
+  transform: skew(-30deg) translateX(-10%);
+}
+
+.snip1543:hover figcaption:before,
+.snip1543.hover figcaption:before {
+  -webkit-transform: skew(30deg) translateX(-40%);
+  transform: skew(30deg) translateX(-40%);
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.snip1543:hover figcaption:after,
+.snip1543.hover figcaption:after {
+  -webkit-transform: skew(-30deg) translateX(-30%);
+  transform: skew(-30deg) translateX(-30%);
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+
+/* RESPONSIVE MEDIA START */
+
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .about{
+        margin-top: -1px;
+    }
+    .works{
+        margin-top: -1px;
+    }
+    .footer{
+        margin-top: -1px;
+    }
+}
+
+
+@media (max-width: 1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .home .home-content .text-1{
+        font-size: 26px;
+    }
+    .home .home-content .text-2{
+        font-size: 66px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 66px;
+    }
+    
+    .home .home-content .text-4{
+        font-size: 66px;
+    }
+
+    .about{
+        margin-top: -1px;
+        margin-left: 0px;
+    }
+    .about .about-content .right{
+        width: 50%;
+    }
+    .about .about-content .right .about-cnt{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .about .about-content .right .about-cnt span{
+        font-style: italic;
+        font-size: 24px;
+        color:#959595;
+        font-weight: 600;
+    }
+    #p1{
+        font-size: 18px;
+        line-height:30px;
+        margin-bottom: 20px;
+    }
+    .edu{
+        color:#959595;
+        font-weight: 600;
+    }
+
+    .snip1543 {
+        background-color: #fff;
+        color: #ffffff;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+        align-items: center;
+        max-width: 100%;
+        min-width: 50%;
+        max-height:100%;
+        min-height:100%;
+        overflow: hidden;
+        position:relative;
+        text-align: left;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+}
+
+
+@media (max-width: 947px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    .home .home-content .text-1{
+        font-size: 24px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 60px;
+    }
+    
+    .home .home-content .text-4{
+        font-size: 60px;
+    }
+    
+    
+    .about{
+        margin-top: -1px;
+        margin-left: 0px;
+    }
+    .about .about-content .right{
+        width: 45%;
+    }
+    .about .about-content .right .about-cnt{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .about .about-content .right .about-cnt span{
+        font-style: italic;
+        font-size: 24px;
+        color:#959595;
+        font-weight: 600;
+    }
+    #p1{
+        font-size: 18px;
+        line-height:30px;
+        margin-bottom: 20px;
+    }
+    .edu{
+        color:#959595;
+        font-weight: 600;
+    }
+
+
+    .snip1543 {
+        background-color: #fff;
+        color: #ffffff;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+        align-items: center;
+        max-width: 100%;
+        min-width: 50%;
+        max-height: 100%;
+        min-height: 100%;
+        overflow:hidden;
+        position:relative;
+        text-align: left;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    
+}
+
+
+@media (max-width: 768px){
+    .home .max-width{
+        margin-left: 0px;
+        padding-top: 20px;
+    }
+    .home .home-content .text-1{
+        font-size: 24px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 60px;
+    }
+    .home .home-content .text-4{
+        font-size: 60px;
+    }
+
+
+    .about .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .about .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px;
+    }
+    .about .about-content{
+        display:block;
+        
+        color:white;
+    }
+    .about .about-content .left{
+        margin: auto;
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    .about .about-content .left img{
+        margin: auto;
+        height:300px;
+        width: 300px;
+        border-radius: 50%;
+        align-self: center;
+    
+    }
+    .about{
+        margin-top: -1px;
+        margin-left: 0px;
+    }
+    
+    .about .about-content .right{
+        margin: auto;
+        width: 100%;
+    }
+    .about .about-content .right .about-cnt{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .about .about-content .right .about-cnt span{
+        font-style: italic;
+        font-size: 18px;
+        color:#959595;
+        font-weight: 600;
+    }
+    #p1{
+        font-size: 18px;
+        line-height:30px;
+        margin-bottom: 20px;
+    }
+    .edu{
+        color:#959595;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 125%;
+    }
+
+
+    .works .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .works .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px;
+    }
+    .snip1543 {
+        background-color: #fff;
+        color: #ffffff;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+        align-items: center;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        overflow:hidden;
+        position:relative;
+        text-align: left;
+        height:460px;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .works .works-content .title-2{
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+
+@media (max-width: 690px){
+    .home .max-width{
+        margin-left: 0px;
+        padding-top: 20px;
+    }
+    .home .home-content .text-1{
+        font-size: 24px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 60px;
+    }
+    .home .home-content .text-4{
+        font-size: 60px;
+    }
+
+
+    .about .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .about .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px;  
+    }
+    .about .about-content{
+        display:block;
+        
+        color:white;
+    }
+    .about .about-content .left{
+        margin: auto;
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    .about .about-content .left img{
+        margin: auto;
+        height:300px;
+        width: 300px;
+        border-radius: 50%;
+        align-self: center;
+    }
+    .about{
+        margin-top: -1px;
+        margin-left: 0px;
+    }
+    .about .about-content .right{
+        margin: auto;
+        width: 100%;
+    }
+    .about .about-content .right .about-cnt{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .about .about-content .right .about-cnt span{
+        font-style: italic;
+        font-size: 18px;
+        color:#959595;
+        font-weight: 600;
+    }
+    #p1{
+        font-size: 18px;
+        line-height:30px;
+        margin-bottom: 20px;
+    }
+    .edu{
+        color:#959595;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 125%;
+    }
+
+    .works .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .works .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px;  
+    }
+    .snip1543 {
+        background-color: #fff;
+        color: #ffffff;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+        align-items: center;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        overflow:hidden;
+        position:relative;
+        text-align: left;
+        height:410px;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .works .works-content .title-2{
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 500;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+
+@media (max-width: 500px){
+    .home .home-content .text-1{
+        font-size: 22px;
+    }
+    .home .home-content .text-2{
+        font-size: 54px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 54px;
+    }
+    
+    .home .home-content .text-4{
+        font-size: 54px;
+    }
+
+
+    .about .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .about .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px; 
+    }
+    .about .about-content{
+        display:block;
+        
+        color:white;
+    }
+    .about .about-content .left{
+        margin: auto;
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    .about .about-content .left img{
+        margin: auto;
+        height:200px;
+        width: 200px;
+        border-radius: 50%;
+        align-self: center;
+    }
+    .about{
+        margin-top: -1px;
+        margin-left: 0px;
+    }
+    .about .about-content .right{
+        margin: auto;
+        width: 100%;
+    }
+    .about .about-content .right .about-cnt{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .about .about-content .right .about-cnt span{
+        font-style: italic;
+        font-size: 16px;
+        color:#959595;
+        font-weight: 600;
+    }
+    #p1{
+        font-size: 16px;
+        line-height:30px;
+        margin-bottom: 20px;
+    }
+    .edu{
+        color:#959595;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 125%;
+    }
+
+    .works .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .works .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px; 
+    }
+    .snip1543 {
+        background-color: #fff;
+        color: #ffffff;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+        align-items: center;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        overflow:hidden;
+        position:relative;
+        text-align: left;
+        height:270px;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    .works .works-content .title-2{
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 500;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+    }
+}
