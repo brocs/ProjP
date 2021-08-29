@@ -1274,6 +1274,11 @@ section{
         margin-top: -104px;
         margin-bottom: 50px;
     }
+    .contact .contact-content .row {
+        display: flex;
+        height: 90px;
+        align-items: center;
+    }
 }
 
 
@@ -1705,6 +1710,11 @@ section{
     }
     footer{
         font-size: 12px;
+    }
+    .contact .contact-content .row {
+        display: flex;
+        height: 100px;
+        align-items: center;
     }
 }
 
