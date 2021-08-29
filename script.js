@@ -11,11 +11,17 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+    var typed = new Typed (".typing", {
+        strings: ["FILBEN JOHN BROCA", "BROX", "FILBEN"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+    });
 });
 
 
-$(".hover").mouseleave(
-    function() {
-      $(this).removeClass("hover");
-    }
-  );
+$(".hover").mouseleave(function(){
+    $(this).removeClass("hover");
+});
+
+
