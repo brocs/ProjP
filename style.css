@@ -1086,3 +1086,141 @@ section{
         font-family: 'Poppins', sans-serif;
     }
 }
+
+@media (max-width: 360px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .home .home-content .text-1{
+        font-size: 22px;
+    }
+    .home .home-content .text-2{
+        font-size: 54px;
+    }
+    
+    .home .home-content .text-3{
+        font-size: 54px;
+    }
+    
+    .home .home-content .text-4{
+        font-size: 54px;
+    }
+
+
+    .about .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .about .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px; 
+    }
+    .about .about-content{
+        display:block;
+        color:white;
+        align-items: center;
+        width: 100%;
+    }
+    .about .about-content .left{
+        margin: auto;
+        display: flex;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .about .about-content .left img{
+        margin: auto;
+        height:200px;
+        width: 200px;
+        border-radius: 50%;
+        align-self: center;
+    }
+    .about{
+        margin-top: -1px;
+        margin-left: 0px;
+    }
+    .about .about-content .right{
+        margin: auto;
+        width: 100%;
+    }
+    .about .about-content .right .about-cnt{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .about .about-content .right .about-cnt span{
+        font-style: italic;
+        font-size: 16px;
+        color:#959595;
+        font-weight: 600;
+    }
+    #p1{
+        font-size: 16px;
+        line-height:30px;
+        margin-bottom: 20px;
+    }
+    .edu{
+        color:#959595;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 125%;
+    }
+
+    .works .title{
+        text-align: center;
+        font-size: 28px;
+        font-family: 'Urbanist', sans-serif;
+        display: block;
+        z-index: 999;
+        color: #f9a241;
+        padding-bottom: 50px;  
+    }
+    .works .title-1{
+        text-align: center;
+        top:45px;
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        opacity: .1;
+        position:static;
+        margin-top: -104px;
+        margin-bottom: 50px; 
+    }
+    .snip1543 {
+        background-color: #fff;
+        color: #ffffff;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+        align-items: center;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 100%;
+        overflow:hidden;
+        position:relative;
+        text-align: left;
+        height:270px;
+        width: 100%;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    .works .works-content .title-2{
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 500;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+    }
+}
