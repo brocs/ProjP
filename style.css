@@ -38,8 +38,8 @@ html {
     color:transparent;
     font-size: 28px;
     font-weight: 600;
-    pointer-events: none;
-    cursor: default;
+    
+    
 }
 .navbar.sticky .logo a{
     color:#f9a241;
