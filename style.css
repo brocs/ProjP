@@ -81,7 +81,7 @@ html {
     background-position:top right;
     height: 100vh;
     min-height: 500px;
-    width: 100vw;
+    /*width: 100vw;*/
 }
 
 .home .max-width{
@@ -131,8 +131,18 @@ section{
     color: #f9a241; /* Hover color */
 }
 .about{
+
+    display: flex;
+    background: url("images/me3.png") no-repeat #323232;
+    background-attachment: fixed;
+    background-size:auto;
+    background-position:top right;
+    height: 100vh;
+    min-height: 500px;
+    
+    
     font-family: 'Roboto', sans-serif;
-    background: #353435;
+    
     padding-top: 10%;   
     /*padding-bottom: 14.2%;*/
     height: 100vh;
@@ -460,7 +470,7 @@ section{
     background-position:top right;
     height: 100vh;
     min-height: 500px;
-    width: 100vw;
+   
 }
 
 .contact .title{
