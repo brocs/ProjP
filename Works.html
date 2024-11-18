@@ -81,6 +81,60 @@
                     
                     <!-- Repeat for other projects -->
                 </div>
+                <div class="gallery">
+                    
+                    <div class="video-thumbnail" onclick="openModal(1)">
+                        <img src="images/vt1.jpg" alt="Video 1 Thumbnail">
+                        <div class="play-icon">&#9658;</div> <!-- Play icon -->
+                    </div>
+                    
+                    <!-- Video Thumbnail 2 -->
+                    <div class="video-thumbnail" onclick="openModal(2)">
+                        <img src="images/vt2.jpg" alt="Video 2 Thumbnail">
+                        <div class="play-icon">&#9658;</div>
+                    </div>
+                    
+                    <!-- Video Thumbnail 3 -->
+                    <div class="video-thumbnail" onclick="openModal(3)">
+                        <img src="images/vt3.jpg" alt="Video 3 Thumbnail">
+                        <div class="play-icon">&#9658;</div>
+                    </div>
+                    
+                    <!-- Modal for Video 1 -->
+                    <div id="videoModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close-modal" onclick="closeModal(1)">&times;</span>
+                            <video id="videoPlayer1" controls>
+                                <source src="images/whatwedo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal for Video 2 -->
+                    <div id="videoModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close-modal" onclick="closeModal(2)">&times;</span>
+                            <video id="videoPlayer2" controls>
+                                <source src="images/beginningofagik.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal for Video 3 -->
+                    <div id="videoModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close-modal" onclick="closeModal(3)">&times;</span>
+                            <video id="videoPlayer3" controls>
+                                <source src="images/video3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <h2 style="color: #959595;">ANIMATION</h2>
+                    <!-- Repeat for other projects -->
+                </div>
             </div>
         </section>
 
@@ -111,10 +165,36 @@
             });
             </script>
         <script>
-    function openModal(url) {
-    window.open(url, '_blank');
-}
+        function openModal(url) {
+            window.open(url, '_blank');
+        }   
+
+        
         </script>
+        <script>
+        function openModal(videoId) {
+            var modal = document.getElementById('videoModal' + videoId);
+            var video = document.getElementById('videoPlayer' + videoId);
+            
+            // Show the modal
+            modal.style.display = 'flex';
+            
+            // Play the video
+            video.play();
+        }
+        
+        // Close the modal and pause the video
+        function closeModal(videoId) {
+            var modal = document.getElementById('videoModal' + videoId);
+            var video = document.getElementById('videoPlayer' + videoId);
+            
+            // Pause the video and reset to the beginning
+            video.pause();
+            video.currentTime = 0;
+            
+            // Hide the modal
+            modal.style.display = 'none';
+        }</script>
         
     </body>
 </html>
