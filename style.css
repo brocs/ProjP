@@ -121,11 +121,21 @@ html {
 section{
     padding: 100px 0;
 }
+.companylink {
+    color: white; /* Unhover color */
+    text-decoration: none; /* Optional: remove underline */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.companylink:hover {
+    color: #f9a241; /* Hover color */
+}
 .about{
     font-family: 'Roboto', sans-serif;
     background: #353435;
     padding-top: 10%;   
-    padding-bottom: 10%;
+    /*padding-bottom: 14.2%;*/
+    height: 100vh;
 }
 .about .title{
     text-align: center;
@@ -212,6 +222,74 @@ section{
     padding-bottom: 10%;
     background: #2d2d2d;
     font-family: 'Poppins', sans-serif;
+    height:100vh;
+}
+.works .title{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Urbanist', sans-serif;
+    display: block;
+    z-index: 999;
+    color: #f9a241;
+    padding-bottom: 50px;
+    
+}
+.works .title-1{
+    text-align: center;
+    top:45px;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    opacity: .1;
+    position:static;
+    margin-top: -125px;
+    margin-bottom: 50px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+}
+
+.card .text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*.works{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background: #2d2d2d;
+    font-family: 'Poppins', sans-serif;
+    
 }
 .works .carousel a:visited,
 .works .carousel a:link,
@@ -297,20 +375,20 @@ section{
 .owl-dot.active,
 .owl-dot:hover{
     background: #f9a241!important;
-}
+}*/
 
 
 /* contact section styling */
 .contact{
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 22.64%;
     background: #f9a241;
     font-family: 'Poppins', sans-serif;
     background: url("images/herobanner.png") no-repeat #f9a241;
     background-attachment: fixed;
     background-size:auto;
     background-position:top right;
-
+    height: 100vh;
     min-height: 500px;
     width: 100vw;
 }
@@ -455,6 +533,25 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+
+/* HOME CTA */
+.buttons {
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 
