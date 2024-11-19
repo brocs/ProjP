@@ -15,10 +15,15 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
     <body>
+        <!--<nav class="navbar">
         <!--<nav class="navbar">
             <div class="max-width">
                 <div class="logo"><a href="#home">BROX</a></div>
@@ -33,6 +38,7 @@
                 </div>
             </div>
         </nav>-->
+        </nav>-->
 
         <section class="home" id="home">
             <div class="max-width">
@@ -45,19 +51,40 @@
                         <a href="Aboutme.html" class="btn">About Me</a>
                         <a href="Works.html" class="btn">Works</a>
                         <a href="Contacts.html" class="btn">Contact</a>
+                    <div class="buttons">
+                        <a href="Aboutme.html" class="btn">About Me</a>
+                        <a href="Works.html" class="btn">Works</a>
+                        <a href="Contacts.html" class="btn">Contact</a>
                     </div>
                 </div>
             </div>
         </section>
 
         
+
+        
         <!-- footer section start -->
         <footer>
+            <span>Created By <span class="typing-in"></span> | &copy; 2024 All rights reserved.</span>
             <span>Created By <span class="typing-in"></span> | &copy; 2024 All rights reserved.</span>
         </footer>
 
     
+    
         <script src="script.js"></script>
+        <script>
+            $(document).ready(function(){
+               
+                var typed = new Typed (".typing-in", {
+                    strings: ["BROX", "FILBEN"],
+                    typeSpeed: 100,
+                    backSpeed: 60,
+                    loop: true,
+                });
+                
+                
+            });
+            </script>
         <script>
             $(document).ready(function(){
                

@@ -29,6 +29,7 @@ $(document).ready(function(){
         loop: true,
     });
     
+    
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
